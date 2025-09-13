@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 import os
-from urllib import parse
+from urllib.parse import quote
+import re
 
 HEADER = """# 📚 백준 & 프로그래머스 문제 풀이 목록
 
@@ -44,25 +45,29 @@ def main():
         platform = parts[1]
         difficulty = parts[2]
         
-        # 문제가 있는 폴더는 보통 문제 번호로 되어있습니다.
-        # 폴더 이름이 숫자인 경우에만 문제로 간주합니다.
-        try:
-            problem_number = int(os.path.basename(root))
-        except ValueError:
-            continue
+        for file in files:
+            # 파일 이름에서 문제 번호와 문제명을 추출하는 정규식
+            # '10718. We love kriii.cpp' -> '10718', 'We love kriii'
+            match = re.search(r'^(\d+)[^.]*?\.(.*)', file)
             
-        # 문제 파일의 경로를 가져옵니다. 여러 파일이 있을 수 있으므로 첫 번째 파일만 사용합니다.
-        file_path = os.path.join(root, files[0])
+            if match:
+                problem_number = match.group(1)
+                problem_name = match.group(2).split('.')[0].replace(' ', ' ')
+            else:
+                # 정규식에 일치하지 않는 파일은 건너뜁니다.
+                continue
+            
+            file_path = os.path.join(root, file)
 
-        # problems 딕셔너리에 데이터 정리
-        if language not in problems:
-            problems[language] = {}
-        if platform not in problems[language]:
-            problems[language][platform] = {}
-        if difficulty not in problems[language][platform]:
-            problems[language][platform][difficulty] = []
-            
-        problems[language][platform][difficulty].append((problem_number, file_path))
+            # problems 딕셔너리에 데이터 정리
+            if language not in problems:
+                problems[language] = {}
+            if platform not in problems[language]:
+                problems[language][platform] = {}
+            if difficulty not in problems[language][platform]:
+                problems[language][platform][difficulty] = []
+                
+            problems[language][platform][difficulty].append((problem_number, problem_name, file_path))
         
     # 정리된 데이터를 바탕으로 Markdown 파일 내용 생성
     # 언어별로 정렬
@@ -78,14 +83,14 @@ def main():
 
             for difficulty in sorted_difficulties:
                 content += f"\n#### ⭐️ {difficulty}\n"
-                content += "| 문제 번호 | 링크 |\n"
-                content += "| :--- | :--- |\n"
+                content += "| 문제 번호 | 문제명 | 링크 |\n"
+                content += "| :--- | :--- | :--- |\n"
                 
                 # 문제 번호별로 정렬
-                for problem_number, file_path in sorted(problems[language][platform][difficulty]):
+                for problem_number, problem_name, file_path in sorted(problems[language][platform][difficulty], key=lambda x: int(x[0])):
                     # URL 인코딩을 통해 한글 파일 경로도 링크로 사용 가능하게 만듭니다.
-                    encoded_path = parse.quote(file_path)
-                    content += f"| {problem_number} | [문제 풀이]({encoded_path}) |\n"
+                    encoded_path = quote(file_path)
+                    content += f"| {problem_number} | {problem_name} | [문제 풀이]({encoded_path}) |\n"
     
     # README.md 파일에 내용 쓰기
     with open("README.md", "w", encoding='utf-8') as fd:
