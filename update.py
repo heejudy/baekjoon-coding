@@ -11,26 +11,27 @@ HEADER = """# 📘 백준 & 프로그래머스 문제 풀이 목록
 
 def main():
     content = HEADER
-    # 최상위 디렉토리 (백준, 프로그래머스)
-    for site in sorted(os.listdir(".")):
-        if site in [".git", ".github", "images", "__pycache__"]:
+
+    # 최상위: 언어 (Python, C++17, Java ...)
+    for lang in sorted(os.listdir(".")):
+        if lang in [".git", ".github", "images", "__pycache__", "update.py", "README.md"]:
             continue
-        if not os.path.isdir(site):
+        if not os.path.isdir(lang):
             continue
 
-        content += f"\n## 📚 {site}\n"
+        content += f"\n## 📚 {lang}\n"
 
-        # 언어별 (Python, C++, Java 등)
-        for lang in sorted(os.listdir(site)):
-            lang_path = os.path.join(site, lang)
-            if not os.path.isdir(lang_path):
+        # 그 다음: 사이트 (백준, 프로그래머스)
+        for site in sorted(os.listdir(lang)):
+            site_path = os.path.join(lang, site)
+            if not os.path.isdir(site_path):
                 continue
 
-            content += f"\n### 🚀 {lang}\n"
+            content += f"\n### 🚀 {site}\n"
 
-            # 난이도별 (Bronze, Silver, Gold ...)
-            for level in sorted(os.listdir(lang_path)):
-                level_path = os.path.join(lang_path, level)
+            # 난이도 (Bronze, Silver, Gold, Level1, Level2 ...)
+            for level in sorted(os.listdir(site_path)):
+                level_path = os.path.join(site_path, level)
                 if not os.path.isdir(level_path):
                     continue
 
