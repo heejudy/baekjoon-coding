@@ -79,9 +79,21 @@ def main():
         languages.remove("Python")
         languages = ["Python"] + languages
 
+    # 난이도 우선순위 (원하는 순서대로 정의)
+    difficulty_order = {
+        "Platinum": 1,
+        "Diamond": 2,
+        "Ruby": 3,
+        "Gold": 4,
+        "Silver": 5,
+        "Bronze": 6
+    }
+
     for language in languages:
         content += f"## 🖥️ {language}\n\n"
-        for difficulty in sorted(problems[language].keys()):
+        
+        # 난이도 정렬을 order 기준으로
+        for difficulty in sorted(problems[language].keys(), key=lambda x: difficulty_order.get(x, 999)):
             content += f"### ⭐ {difficulty}\n"
             content += "| 문제번호 | 문제이름 | 링크 |\n"
             content += "| -------- | -------- | ---- |\n"
