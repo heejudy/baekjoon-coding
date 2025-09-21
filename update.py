@@ -31,15 +31,13 @@ def main():
 
         # 예: baekjoon-coding/C++17/백준/Bronze
         language = path_parts[1]          # C++17, Java, Python 등
-        site = path_parts[2]              # 백준 or 프로그래머스
+        # site = path_parts[2]            # 백준 or 프로그래머스 (이제 사용 안 함)
         difficulty = path_parts[3]        # Bronze, Silver 등
 
         if language not in problems:
             problems[language] = {}
-        if site not in problems[language]:
-            problems[language][site] = {}
-        if difficulty not in problems[language][site]:
-            problems[language][site][difficulty] = []
+        if difficulty not in problems[language]:
+            problems[language][difficulty] = []
 
         for file in files:
             # 불필요한 파일 제외
@@ -53,27 +51,18 @@ def main():
             else:
                 number, title = parts[0], ""
             link = parse.quote(os.path.join(root, file))
-            problems[language][site][difficulty].append((number, title, link))
+            problems[language][difficulty].append((number, title, link))
 
     # 출력 파트
     for language in sorted(problems.keys()):
         content += f"## 🖥️ {language}\n\n"
-        for site in sorted(problems[language].keys()):
-            content += f"### 📚 {site}\n\n"
-            for difficulty in sorted(problems[language][site].keys()):
-                content += f"### ⭐️ {difficulty}\n"
-                content += "| 문제번호 | 문제이름 | 링크 |\n"
-                content += "| -------- | -------- | ---- |\n"
-                for item in sorted(problems[language][site][difficulty]):
-                    if len(item) == 3:
-                        number, title, link = item
-                    elif len(item) == 2:  # 이전 데이터 호환성
-                        number, link = item
-                        title = ""
-                    else:
-                        continue
-                    content += f"| {number} | {title} | [링크]({link}) |\n"
-                content += "\n"
+        for difficulty in sorted(problems[language].keys()):
+            content += f"### ⭐️ {difficulty}\n"
+            content += "| 문제번호 | 문제이름 | 링크 |\n"
+            content += "| -------- | -------- | ---- |\n"
+            for number, title, link in sorted(problems[language][difficulty]):
+                content += f"| {number} | {title} | [링크]({link}) |\n"
+            content += "\n"
 
     with open("README.md", "w", encoding="utf-8") as fd:
         fd.write(content)
