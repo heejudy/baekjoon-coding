@@ -8,6 +8,21 @@ HEADER = """#
 # 백준, 프로그래머스 문제 풀이 목록
 """
 
+def extract_number_and_title(name):
+    """
+    '1234. 문제이름' → (1234, 문제이름)
+    '문제이름' → ("", 문제이름)
+    '1234' → ("", 1234)  # 숫자만 있으면 이름 취급
+    """
+    if re.match(r"^\d+\.", name):  # "1234.문제"
+        number, title = name.split(".", 1)
+        return number, title.strip()
+    elif name.isdigit():  # "1234" → 이름 취급
+        return "", name
+    else:  # 그냥 제목
+        return "", name
+
+
 def main():
     content = ""
     content += HEADER + "\n"
@@ -32,6 +47,10 @@ def main():
 
         language = path_parts[1]     # C++17, Java, Python 등
         difficulty = path_parts[3]   # Bronze, Silver 등
+        problem_dir = path_parts[-1] # "11718. 그대로 출력하기"
+
+        # 디렉토리에서 번호 + 제목 뽑기
+        dir_number, dir_title = extract_number_and_title(problem_dir)
 
         if language not in problems:
             problems[language] = {}
@@ -43,16 +62,11 @@ def main():
                 continue
 
             filename = os.path.splitext(file)[0]  # 확장자 제거
+            file_number, file_title = extract_number_and_title(filename)
 
-            # 1) "1234.제목" → 번호=1234, 이름=제목
-            if re.match(r"^\d+\.", filename):
-                number, title = filename.split(".", 1)
-            # 2) "숫자만" → 번호 없음, 이름=숫자
-            elif filename.isdigit():
-                number, title = "", filename
-            # 3) "문자열" → 번호 없음, 이름=문자열
-            else:
-                number, title = "", filename
+            # 우선순위: 디렉토리 정보 > 파일 정보
+            number = dir_number if dir_number else file_number
+            title = dir_title if dir_title else file_title
 
             link = parse.quote(os.path.join(root, file))
             problems[language][difficulty].append((number, title, link))
