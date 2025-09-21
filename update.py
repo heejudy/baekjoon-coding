@@ -47,9 +47,13 @@ def main():
                 continue
 
             filename = os.path.splitext(file)[0]  # "11098.첼시를 도와줘!"
-            number = filename.split(".")[0]       # "11098"
+            parts = filename.split(".", 1)
+            if len(parts) == 2:
+                number, title = parts
+            else:
+                number, title = parts[0], ""
             link = parse.quote(os.path.join(root, file))
-            problems[language][site][difficulty].append((number, link))
+            problems[language][site][difficulty].append((number, title, link))
 
     # 출력 파트
     for language in sorted(problems.keys()):
@@ -60,7 +64,14 @@ def main():
                 content += f"### ⭐️ {difficulty}\n"
                 content += "| 문제번호 | 문제이름 | 링크 |\n"
                 content += "| -------- | -------- | ---- |\n"
-                for number, title, link in sorted(problems[language][site][difficulty]):
+                for item in sorted(problems[language][site][difficulty]):
+                    if len(item) == 3:
+                        number, title, link = item
+                    elif len(item) == 2:  # 이전 데이터 호환성
+                        number, link = item
+                        title = ""
+                    else:
+                        continue
                     content += f"| {number} | {title} | [링크]({link}) |\n"
                 content += "\n"
 
