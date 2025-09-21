@@ -55,13 +55,12 @@ def main():
     for language in sorted(problems.keys()):
         content += f"## 🖥️ {language}\n\n"
         for site in sorted(problems[language].keys()):
-            content += f"### 📚 {site}\n\n"
             for difficulty in sorted(problems[language][site].keys()):
-                content += f"#### {difficulty}\n"
-                content += "| 문제번호 | 링크 |\n"
-                content += "| ------- | ---- |\n"
-                for number, link in sorted(problems[language][site][difficulty]):
-                    content += f"| {number} | [링크]({link}) |\n"
+                content += f"### ⭐️ {difficulty}\n"
+                content += "| 문제번호 | 문제이름 | 링크 |\n"
+                content += "| -------- | -------- | ---- |\n"
+                for number, title, link in sorted(problems[language][site][difficulty]):
+                    content += f"| {number} | {title} | [링크]({link}) |\n"
                 content += "\n"
 
     with open("README.md", "w", encoding="utf-8") as fd:
