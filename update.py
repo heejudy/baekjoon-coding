@@ -88,3 +88,10 @@ def main():
             for number, title, link in sorted(problems[language][difficulty]):
                 content += f"| {number} | {title} | [링크]({link}) |\n"
             content += "\n"
+
+    with open("README.md", "w", encoding="utf-8") as fd:
+        fd.write(content)
+
+
+if __name__ == "__main__":
+    main()
