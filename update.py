@@ -30,9 +30,8 @@ def main():
         if len(path_parts) < 4:
             continue
 
-        # 예: baekjoon-coding/C++17/백준/Bronze
-        language = path_parts[1]          # C++17, Java, Python 등
-        difficulty = path_parts[3]        # Bronze, Silver 등
+        language = path_parts[1]     # C++17, Java, Python 등
+        difficulty = path_parts[3]   # Bronze, Silver 등
 
         if language not in problems:
             problems[language] = {}
@@ -44,18 +43,21 @@ def main():
                 continue
 
             filename = os.path.splitext(file)[0]  # 확장자 제거
-            # 파일명에서 숫자(문제번호)와 제목 분리
-            match = re.match(r"^(\d+)(?:[.\s]+(.+))?$", filename)
-            if match:
-                number = match.group(1)
-                title = match.group(2) if match.group(2) else ""
+
+            # 1) "1234.제목" → 번호=1234, 이름=제목
+            if re.match(r"^\d+\.", filename):
+                number, title = filename.split(".", 1)
+            # 2) "숫자만" → 번호 없음, 이름=숫자
+            elif filename.isdigit():
+                number, title = "", filename
+            # 3) "문자열" → 번호 없음, 이름=문자열
             else:
-                number, title = "", filename  # 숫자 없는 경우
+                number, title = "", filename
 
             link = parse.quote(os.path.join(root, file))
             problems[language][difficulty].append((number, title, link))
 
-    # 출력 파트
+    # 출력
     for language in sorted(problems.keys()):
         content += f"## 🖥️ {language}\n\n"
         for difficulty in sorted(problems[language].keys()):
