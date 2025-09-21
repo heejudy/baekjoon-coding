@@ -115,6 +115,7 @@
 |1789. 수들의 합|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/1789.%E2%80%85%EC%88%98%EB%93%A4%EC%9D%98%E2%80%85%ED%95%A9/README.md)|
 |18258. 큐 2|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/18258.%E2%80%85%ED%81%90%E2%80%852/%ED%81%90%E2%80%852.py)|
 |1920. 수 찾기|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/1920.%E2%80%85%EC%88%98%E2%80%85%EC%B0%BE%EA%B8%B0/README.md)|
+|1946. 신입 사원|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/1946.%E2%80%85%EC%8B%A0%EC%9E%85%E2%80%85%EC%82%AC%EC%9B%90/README.md)|
 |2164. 카드2|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/2164.%E2%80%85%EC%B9%B4%EB%93%9C2/README.md)|
 |2343. 기타 레슨|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/2343.%E2%80%85%EA%B8%B0%ED%83%80%E2%80%85%EB%A0%88%EC%8A%A8/README.md)|
 |2512. 예산|[링크](./Python/%EB%B0%B1%EC%A4%80/Silver/2512.%E2%80%85%EC%98%88%EC%82%B0/README.md)|
