@@ -2,6 +2,7 @@
 
 import os
 from urllib import parse
+import re
 
 HEADER = """#
 # 백준, 프로그래머스 문제 풀이 목록
@@ -31,7 +32,6 @@ def main():
 
         # 예: baekjoon-coding/C++17/백준/Bronze
         language = path_parts[1]          # C++17, Java, Python 등
-        # site = path_parts[2]            # 백준 or 프로그래머스 (이제 사용 안 함)
         difficulty = path_parts[3]        # Bronze, Silver 등
 
         if language not in problems:
@@ -40,16 +40,18 @@ def main():
             problems[language][difficulty] = []
 
         for file in files:
-            # 불필요한 파일 제외
             if file.lower() == "readme.md":
                 continue
 
-            filename = os.path.splitext(file)[0]  # "11098.첼시를 도와줘!"
-            parts = filename.split(".", 1)
-            if len(parts) == 2:
-                number, title = parts
+            filename = os.path.splitext(file)[0]  # 확장자 제거
+            # 파일명에서 숫자(문제번호)와 제목 분리
+            match = re.match(r"^(\d+)(?:[.\s]+(.+))?$", filename)
+            if match:
+                number = match.group(1)
+                title = match.group(2) if match.group(2) else ""
             else:
-                number, title = parts[0], ""
+                number, title = "", filename  # 숫자 없는 경우
+
             link = parse.quote(os.path.join(root, file))
             problems[language][difficulty].append((number, title, link))
 
@@ -57,7 +59,7 @@ def main():
     for language in sorted(problems.keys()):
         content += f"## 🖥️ {language}\n\n"
         for difficulty in sorted(problems[language].keys()):
-            content += f"### ⭐️ {difficulty}\n"
+            content += f"### ⭐ {difficulty}\n"
             content += "| 문제번호 | 문제이름 | 링크 |\n"
             content += "| -------- | -------- | ---- |\n"
             for number, title, link in sorted(problems[language][difficulty]):
