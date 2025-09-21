@@ -54,7 +54,6 @@ def main():
     # 출력 파트
     for language in sorted(problems.keys()):
         content += f"## 🖥️ {language}\n\n"
-        for site in sorted(problems[language].keys()):
             for difficulty in sorted(problems[language][site].keys()):
                 content += f"### ⭐️ {difficulty}\n"
                 content += "| 문제번호 | 문제이름 | 링크 |\n"
