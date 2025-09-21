@@ -42,6 +42,10 @@ def main():
             problems[language][site][difficulty] = []
 
         for file in files:
+            # 불필요한 파일 제외
+            if file.lower() == "readme.md":
+                continue
+
             filename = os.path.splitext(file)[0]  # "11098.첼시를 도와줘!"
             number = filename.split(".")[0]       # "11098"
             link = parse.quote(os.path.join(root, file))
