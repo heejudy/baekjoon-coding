@@ -71,8 +71,15 @@ def main():
             link = parse.quote(os.path.join(root, file))
             problems[language][difficulty].append((number, title, link))
 
+
     # 출력
-    for language in sorted(problems.keys()):
+    languages = sorted(problems.keys())
+    # Python을 맨 위로
+    if "Python" in languages:
+        languages.remove("Python")
+        languages = ["Python"] + languages
+
+    for language in languages:
         content += f"## 🖥️ {language}\n\n"
         for difficulty in sorted(problems[language].keys()):
             content += f"### ⭐ {difficulty}\n"
@@ -81,10 +88,3 @@ def main():
             for number, title, link in sorted(problems[language][difficulty]):
                 content += f"| {number} | {title} | [링크]({link}) |\n"
             content += "\n"
-
-    with open("README.md", "w", encoding="utf-8") as fd:
-        fd.write(content)
-
-
-if __name__ == "__main__":
-    main()
