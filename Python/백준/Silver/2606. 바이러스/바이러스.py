@@ -1,22 +1,33 @@
-from collections import deque
+N = int(input())
+M = int(input())
+adj = [[] for _ in range(N)]
 
-n = int(input())
-v = int(input())
-graph = [[] for i in range(n+1)]
-visited = [0] * (n+1)
+for _ in range(M):
+    a, b = list(map(int, input().split()))
+    adj[a - 1].append(b - 1)
+    adj[b - 1].append(a - 1)
 
-for i in range(v):
-    a, b = map(int, input().split())
-    graph[a] += [b]
-    graph[b] += [a]
+check = [0] * N
+check[0] = 1
 
-visited[1] = 1
-Q = deque([1])
+while True:
+    new = False
 
-while Q:
-    c = Q.popleft()
-    for nx in graph[c]:
-        if visited[nx] == 0:
-            Q.append(nx)
-            visited[nx] = 1
-print(sum(visited) - 1)
+    for i in range(N):
+        if check[i] == 0:
+            continue
+
+        for j in adj[i]:
+            if check[j] == 0:
+                check[j] = 1
+                new = True
+
+    if not new:
+        break
+
+count = 0
+for i in range(1, N):
+    if check[i] == 1:
+        count += 1
+
+print(count)
