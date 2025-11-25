@@ -1,33 +1,24 @@
-N = int(input())
-M = int(input())
-adj = [[] for _ in range(N)]
+node = int(input())
+edge = int(input())
 
-for _ in range(M):
-    a, b = list(map(int, input().split()))
-    adj[a - 1].append(b - 1)
-    adj[b - 1].append(a - 1)
+graph = [[] for _ in range(node)]
+for _ in range(edge):
+    A, B = list(map(int, input().split()))
+    graph[A-1].append(B-1)
+    graph[B-1].append(A-1)
 
-check = [0] * N
-check[0] = 1
+i = 0
+visited_check = [False] * node
 
-while True:
-    new = False
+visited_check[i] = True
+st = [i]
 
-    for i in range(N):
-        if check[i] == 0:
-            continue
+while len(st) != 0:
+    u = st.pop()
 
-        for j in adj[i]:
-            if check[j] == 0:
-                check[j] = 1
-                new = True
+    for v in graph[u]:
+        if not visited_check[v]:
+            visited_check[v] = True
+            st.append(v)
 
-    if not new:
-        break
-
-count = 0
-for i in range(1, N):
-    if check[i] == 1:
-        count += 1
-
-print(count)
+print(visited_check.count(True)-1)
