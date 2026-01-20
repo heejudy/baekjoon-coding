@@ -13,6 +13,7 @@
 | 문제번호 | 문제이름 | 링크 |
 | -------- | -------- | ---- |
 | 10773 | 제로 | [링크](./Python/%EB%B0%B1%EC%A4%80/Silver/10773.%E2%80%85%EC%A0%9C%EB%A1%9C/%EC%A0%9C%EB%A1%9C.py) |
+| 10814 | 나이순 정렬 | [링크](./Python/%EB%B0%B1%EC%A4%80/Silver/10814.%E2%80%85%EB%82%98%EC%9D%B4%EC%88%9C%E2%80%85%EC%A0%95%EB%A0%AC/%EB%82%98%EC%9D%B4%EC%88%9C%E2%80%85%EC%A0%95%EB%A0%AC.py) |
 | 10828 | 스택 | [링크](./Python/%EB%B0%B1%EC%A4%80/Silver/10828.%E2%80%85%EC%8A%A4%ED%83%9D/%EC%8A%A4%ED%83%9D.py) |
 | 11399 | ATM | [링크](./Python/%EB%B0%B1%EC%A4%80/Silver/11399.%E2%80%85ATM/ATM.py) |
 | 11659 | 구간 합 구하기 4 | [링크](./Python/%EB%B0%B1%EC%A4%80/Silver/11659.%E2%80%85%EA%B5%AC%EA%B0%84%E2%80%85%ED%95%A9%E2%80%85%EA%B5%AC%ED%95%98%EA%B8%B0%E2%80%854/%EA%B5%AC%EA%B0%84%E2%80%85%ED%95%A9%E2%80%85%EA%B5%AC%ED%95%98%EA%B8%B0%E2%80%854.py) |
