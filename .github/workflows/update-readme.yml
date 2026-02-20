@@ -1,0 +1,41 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - 'Baekjoon/**'
+      - 'LeetCode/**'
+      - 'Programmers/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate README
+        run: |
+          echo "# Algorithm Study" > temp.md
+          echo "" >> temp.md
+
+          echo "## Baekjoon" >> temp.md
+          find Baekjoon -type f -name "*.md" | sort >> temp.md
+
+          echo "" >> temp.md
+          echo "## Programmers" >> temp.md
+          find Programmers -type f -name "*.md" | sort >> temp.md
+
+          echo "" >> temp.md
+          echo "## LeetCode" >> temp.md
+          find LeetCode -type f -name "*.md" | sort >> temp.md
+
+          mv temp.md README.md
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "action@github.com"
+          git add README.md
+          git commit -m "auto update README" || exit 0
+          git push
