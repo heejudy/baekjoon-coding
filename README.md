@@ -123,6 +123,16 @@
 | -------- | -------- | ---- |
 |  | Easy | [링크](./Python/LeetCode/Easy/.gitkeep) |
 
+### ⭐ Hard
+| 문제번호 | 문제이름 | 링크 |
+| -------- | -------- | ---- |
+|  | Hard | [링크](./Python/LeetCode/Hard/.gitkeep) |
+
+### ⭐ Medium
+| 문제번호 | 문제이름 | 링크 |
+| -------- | -------- | ---- |
+|  | Medium | [링크](./Python/LeetCode/Medium/.gitkeep) |
+
 ## 🖥️ C++17
 
 ### ⭐ Silver
