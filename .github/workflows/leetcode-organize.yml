@@ -1,0 +1,38 @@
+name: Organize LeetCode
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Move LeetCode folders
+        run: |
+          for dir in 0*; do
+            if [ -d "$dir" ]; then
+              if git log -1 --pretty=%B | grep -qi "Easy"; then
+                mkdir -p Python/LeetCode/Easy
+                mv "$dir" Python/LeetCode/Easy/
+              elif git log -1 --pretty=%B | grep -qi "Medium"; then
+                mkdir -p Python/LeetCode/Medium
+                mv "$dir" Python/LeetCode/Medium/
+              elif git log -1 --pretty=%B | grep -qi "Hard"; then
+                mkdir -p Python/LeetCode/Hard
+                mv "$dir" Python/LeetCode/Hard/
+              fi
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Auto organize LeetCode" || echo "No changes"
+          git push
