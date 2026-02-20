@@ -22,57 +22,38 @@ jobs:
           echo "# Algorithm Study" > README.md
           echo "" >> README.md
 
-          ################################
+          ############################
           # Baekjoon
-          ################################
+          ############################
           if [ -d "Baekjoon" ]; then
             echo "## 🟦 Baekjoon" >> README.md
             echo "" >> README.md
 
-            for level in Baekjoon/*; do
-              if [ -d "$level" ]; then
+            for lang in Baekjoon/*; do
+              [ -d "$lang" ] || continue
+
+              for level in "$lang"/*; do
+                [ -d "$level" ] || continue
                 level_name=$(basename "$level")
+
                 echo "### $level_name" >> README.md
 
-                for file in "$level"/*.md; do
-                  [ -e "$file" ] || continue
-                  title=$(basename "$file" .md)
-                  number=$(echo "$title" | grep -o '[0-9]\+')
+                for problem in "$level"/*; do
+                  [ -d "$problem" ] || continue
+                  title=$(basename "$problem")
+                  number=$(echo "$title" | grep -o '^[0-9]\+')
+
                   echo "- [$title](https://www.acmicpc.net/problem/$number)" >> README.md
                 done
+
                 echo "" >> README.md
-              fi
+              done
             done
           fi
 
-          ################################
-          # Programmers
-          ################################
-          if [ -d "Programmers" ]; then
-            echo "---" >> README.md
-            echo "" >> README.md
-            echo "## 🟩 Programmers" >> README.md
-            echo "" >> README.md
-
-            for level in Programmers/*; do
-              if [ -d "$level" ]; then
-                level_name=$(basename "$level")
-                echo "### $level_name" >> README.md
-
-                for file in "$level"/*.md; do
-                  [ -e "$file" ] || continue
-                  title=$(basename "$file" .md)
-                  slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
-                  echo "- [$title](https://school.programmers.co.kr/search?keyword=$slug)" >> README.md
-                done
-                echo "" >> README.md
-              fi
-            done
-          fi
-
-          ################################
+          ############################
           # LeetCode
-          ################################
+          ############################
           if [ -d "LeetCode" ]; then
             echo "---" >> README.md
             echo "" >> README.md
@@ -80,18 +61,47 @@ jobs:
             echo "" >> README.md
 
             for level in LeetCode/*; do
-              if [ -d "$level" ]; then
-                level_name=$(basename "$level")
-                echo "### $level_name" >> README.md
+              [ -d "$level" ] || continue
+              level_name=$(basename "$level")
 
-                for file in "$level"/*.md; do
-                  [ -e "$file" ] || continue
-                  title=$(basename "$file" .md)
-                  slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
-                  echo "- [$title](https://leetcode.com/problems/$slug/)" >> README.md
-                done
-                echo "" >> README.md
-              fi
+              echo "### $level_name" >> README.md
+
+              for problem in "$level"/*; do
+                [ -d "$problem" ] || continue
+                title=$(basename "$problem")
+                slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+                echo "- [$title](https://leetcode.com/problems/$slug/)" >> README.md
+              done
+
+              echo "" >> README.md
+            done
+          fi
+
+          ############################
+          # Programmers
+          ############################
+          if [ -d "Programmers" ]; then
+            echo "---" >> README.md
+            echo "" >> README.md
+            echo "## 🟩 Programmers" >> README.md
+            echo "" >> README.md
+
+            for level in Programmers/*; do
+              [ -d "$level" ] || continue
+              level_name=$(basename "$level")
+
+              echo "### $level_name" >> README.md
+
+              for problem in "$level"/*; do
+                [ -d "$problem" ] || continue
+                title=$(basename "$problem")
+                slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+                echo "- [$title](https://school.programmers.co.kr/search?keyword=$slug)" >> README.md
+              done
+
+              echo "" >> README.md
             done
           fi
 
