@@ -12,19 +12,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Get last commit message
+        id: commitmsg
+        run: echo "msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+
       - name: Move LeetCode folders
         run: |
-          for dir in 0*; do
+          msg="${{ steps.commitmsg.outputs.msg }}"
+
+          for dir in 0*-*; do
             if [ -d "$dir" ]; then
-              if git log -1 --pretty=%B | grep -qi "Easy"; then
+              if echo "$msg" | grep -qi "Easy"; then
                 mkdir -p Python/LeetCode/Easy
-                mv "$dir" Python/LeetCode/Easy/
-              elif git log -1 --pretty=%B | grep -qi "Medium"; then
+                mv "$dir" Python/LeetCode/Easy/ || true
+              elif echo "$msg" | grep -qi "Medium"; then
                 mkdir -p Python/LeetCode/Medium
-                mv "$dir" Python/LeetCode/Medium/
-              elif git log -1 --pretty=%B | grep -qi "Hard"; then
+                mv "$dir" Python/LeetCode/Medium/ || true
+              elif echo "$msg" | grep -qi "Hard"; then
                 mkdir -p Python/LeetCode/Hard
-                mv "$dir" Python/LeetCode/Hard/
+                mv "$dir" Python/LeetCode/Hard/ || true
               fi
             fi
           done
