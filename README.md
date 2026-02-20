@@ -118,6 +118,11 @@
 | 8958 | OX퀴즈 | [링크](./Python/%EB%B0%B1%EC%A4%80/Bronze/8958.%E2%80%85OX%ED%80%B4%EC%A6%88/OX%ED%80%B4%EC%A6%88.py) |
 | 9506 | 약수들의 합 | [링크](./Python/%EB%B0%B1%EC%A4%80/Bronze/9506.%E2%80%85%EC%95%BD%EC%88%98%EB%93%A4%EC%9D%98%E2%80%85%ED%95%A9/%EC%95%BD%EC%88%98%EB%93%A4%EC%9D%98%E2%80%85%ED%95%A9.py) |
 
+### ⭐ Easy
+| 문제번호 | 문제이름 | 링크 |
+| -------- | -------- | ---- |
+|  | Easy | [링크](./Python/LeetCode/Easy/.gitkeep) |
+
 ## 🖥️ C++17
 
 ### ⭐ Silver
