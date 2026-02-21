@@ -20,78 +20,102 @@ jobs:
           echo "# Algorithm Study" > README.md
           echo "" >> README.md
 
-          ############################
+          #################################
           # 🟦 Baekjoon
-          ############################
-          echo "## 🟦 Baekjoon" >> README.md
-          echo "" >> README.md
-
-          for lang in $(ls Baekjoon 2>/dev/null); do
-            echo "### 💻 $lang" >> README.md
+          #################################
+          if [ -d "Baekjoon" ]; then
+            echo "## 🟦 Baekjoon" >> README.md
             echo "" >> README.md
 
-            for level in $(ls Baekjoon/$lang 2>/dev/null); do
-              echo "#### 🏅 $level" >> README.md
+            for lang in Baekjoon/*; do
+              [ -d "$lang" ] || continue
+              lang_name=$(basename "$lang")
+
+              echo "### 💻 $lang_name" >> README.md
               echo "" >> README.md
 
-              for file in Baekjoon/$lang/$level/*; do
-                [ -f "$file" ] || continue
-                title=$(basename "$file")
-                id=$(echo "$title" | grep -o '[0-9]\+')
-                link="https://www.acmicpc.net/problem/$id"
-                echo "- [$title]($link)" >> README.md
+              for level in "$lang"/*; do
+                [ -d "$level" ] || continue
+                level_name=$(basename "$level")
+
+                echo "#### 🏅 $level_name" >> README.md
+                echo "" >> README.md
+
+                for problem in "$level"/*; do
+                  [ -d "$problem" ] || continue
+                  title=$(basename "$problem")
+                  id=$(echo "$title" | grep -o '^[0-9]\+')
+                  link="https://www.acmicpc.net/problem/$id"
+                  echo "- [$title]($link)" >> README.md
+                done
+                echo "" >> README.md
               done
-              echo "" >> README.md
             done
-          done
+          fi
 
-          ############################
+          #################################
           # 🟨 Programmers
-          ############################
-          echo "## 🟨 Programmers" >> README.md
-          echo "" >> README.md
-
-          for lang in $(ls Programmers 2>/dev/null); do
-            echo "### 💻 $lang" >> README.md
+          #################################
+          if [ -d "Programmers" ]; then
+            echo "## 🟨 Programmers" >> README.md
             echo "" >> README.md
 
-            for level in $(ls Programmers/$lang 2>/dev/null); do
-              echo "#### 🏅 $level" >> README.md
+            for lang in Programmers/*; do
+              [ -d "$lang" ] || continue
+              lang_name=$(basename "$lang")
+
+              echo "### 💻 $lang_name" >> README.md
               echo "" >> README.md
 
-              for file in Programmers/$lang/$level/*; do
-                [ -f "$file" ] || continue
-                title=$(basename "$file")
-                echo "- $title" >> README.md
+              for level in "$lang"/*; do
+                [ -d "$level" ] || continue
+                level_name=$(basename "$level")
+
+                echo "#### 🏅 $level_name" >> README.md
+                echo "" >> README.md
+
+                for problem in "$level"/*; do
+                  [ -d "$problem" ] || continue
+                  title=$(basename "$problem")
+                  echo "- $title" >> README.md
+                done
+                echo "" >> README.md
               done
-              echo "" >> README.md
             done
-          done
+          fi
 
-          ############################
+          #################################
           # 🟩 LeetCode
-          ############################
-          echo "## 🟩 LeetCode" >> README.md
-          echo "" >> README.md
-
-          for lang in $(ls LeetCode 2>/dev/null); do
-            echo "### 💻 $lang" >> README.md
+          #################################
+          if [ -d "LeetCode" ]; then
+            echo "## 🟩 LeetCode" >> README.md
             echo "" >> README.md
 
-            for level in $(ls LeetCode/$lang 2>/dev/null); do
-              echo "#### 🏅 $level" >> README.md
+            for lang in LeetCode/*; do
+              [ -d "$lang" ] || continue
+              lang_name=$(basename "$lang")
+
+              echo "### 💻 $lang_name" >> README.md
               echo "" >> README.md
 
-              for file in LeetCode/$lang/$level/*; do
-                [ -f "$file" ] || continue
-                title=$(basename "$file")
-                slug=$(echo "$title" | sed 's/\.[^.]*$//')
-                link="https://leetcode.com/problems/$slug"
-                echo "- [$title]($link)" >> README.md
+              for level in "$lang"/*; do
+                [ -d "$level" ] || continue
+                level_name=$(basename "$level")
+
+                echo "#### 🏅 $level_name" >> README.md
+                echo "" >> README.md
+
+                for problem in "$level"/*; do
+                  [ -d "$problem" ] || continue
+                  title=$(basename "$problem")
+                  slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
+                  link="https://leetcode.com/problems/$slug"
+                  echo "- [$title]($link)" >> README.md
+                done
+                echo "" >> README.md
               done
-              echo "" >> README.md
             done
-          done
+          fi
 
       - name: Commit README
         run: |
