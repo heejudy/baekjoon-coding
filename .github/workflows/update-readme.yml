@@ -48,32 +48,29 @@ jobs:
                     title=$(basename "$problem")
 
                     # 🔥 슬래시는 인코딩하지 않도록 수정
-                    encoded_path=$(python3 -c "
-                    import urllib.parse, sys
-                    print(urllib.parse.quote(sys.argv[1], safe='/'))
-                    " "$problem")
-                    
-                                        repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${encoded_path}"
-                    
-                                        echo "- [$title]($repo_url)" >> README.md
-                                      done
-                    
-                                      echo "" >> README.md
-                                      echo "</details>" >> README.md
-                                      echo "" >> README.md
-                    
-                                    done
-                    
-                                    echo "</details>" >> README.md
-                                    echo "" >> README.md
-                    
-                                  done
-                                fi
-                              }
-                    
-                              generate_section "Baekjoon"
-                              generate_section "Programmers"
-                              generate_section "LeetCode"
+                    encoded_path=$(python3 -c "import urllib.parse, sysprint(urllib.parse.quote(sys.argv[1], safe='/'))" "$problem")
+
+                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${encoded_path}"
+
+                    echo "- [$title]($repo_url)" >> README.md
+                  done
+
+                  echo "" >> README.md
+                  echo "</details>" >> README.md
+                  echo "" >> README.md
+
+                done
+
+                echo "</details>" >> README.md
+                echo "" >> README.md
+
+              done
+            fi
+          }
+
+          generate_section "Baekjoon"
+          generate_section "Programmers"
+          generate_section "LeetCode"
 
       - name: Commit README
         run: |
