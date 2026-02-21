@@ -29,16 +29,12 @@ jobs:
 
             for lang in Baekjoon/*; do
               [ -d "$lang" ] || continue
-              lang_name=$(basename "$lang")
-
-              echo "### 💻 $lang_name" >> README.md
+              echo "### 💻 $(basename "$lang")" >> README.md
               echo "" >> README.md
 
               for level in "$lang"/*; do
                 [ -d "$level" ] || continue
-                level_name=$(basename "$level")
-
-                echo "#### 🏅 $level_name" >> README.md
+                echo "#### 🏅 $(basename "$level")" >> README.md
                 echo "" >> README.md
 
                 for problem in "$level"/*; do
@@ -62,22 +58,25 @@ jobs:
 
             for lang in Programmers/*; do
               [ -d "$lang" ] || continue
-              lang_name=$(basename "$lang")
-
-              echo "### 💻 $lang_name" >> README.md
+              echo "### 💻 $(basename "$lang")" >> README.md
               echo "" >> README.md
 
               for level in "$lang"/*; do
                 [ -d "$level" ] || continue
-                level_name=$(basename "$level")
-
-                echo "#### 🏅 $level_name" >> README.md
+                echo "#### 🏅 $(basename "$level")" >> README.md
                 echo "" >> README.md
 
                 for problem in "$level"/*; do
                   [ -d "$problem" ] || continue
                   title=$(basename "$problem")
-                  echo "- $title" >> README.md
+
+                  readme_file="$problem/README.md"
+                  if [ -f "$readme_file" ]; then
+                    link=$(grep -o 'https://programmers.co.kr[^)]*' "$readme_file" | head -n 1)
+                    echo "- [$title]($link)" >> README.md
+                  else
+                    echo "- $title" >> README.md
+                  fi
                 done
                 echo "" >> README.md
               done
@@ -93,24 +92,25 @@ jobs:
 
             for lang in LeetCode/*; do
               [ -d "$lang" ] || continue
-              lang_name=$(basename "$lang")
-
-              echo "### 💻 $lang_name" >> README.md
+              echo "### 💻 $(basename "$lang")" >> README.md
               echo "" >> README.md
 
               for level in "$lang"/*; do
                 [ -d "$level" ] || continue
-                level_name=$(basename "$level")
-
-                echo "#### 🏅 $level_name" >> README.md
+                echo "#### 🏅 $(basename "$level")" >> README.md
                 echo "" >> README.md
 
                 for problem in "$level"/*; do
                   [ -d "$problem" ] || continue
                   title=$(basename "$problem")
-                  slug=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
-                  link="https://leetcode.com/problems/$slug"
-                  echo "- [$title]($link)" >> README.md
+
+                  readme_file="$problem/README.md"
+                  if [ -f "$readme_file" ]; then
+                    link=$(grep -o 'https://leetcode.com[^)]*' "$readme_file" | head -n 1)
+                    echo "- [$title]($link)" >> README.md
+                  else
+                    echo "- $title" >> README.md
+                  fi
                 done
                 echo "" >> README.md
               done
