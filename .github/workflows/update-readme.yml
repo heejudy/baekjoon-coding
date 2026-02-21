@@ -20,44 +20,43 @@ jobs:
           echo "# Algorithm Study" > README.md
           echo "" >> README.md
 
-          generate_section () {
+          generate_content () {
             platform=$1
+            content=""
 
             if [ -d "$platform" ]; then
-              echo "## 📂 $platform" >> README.md
-              echo "" >> README.md
-
               for lang in "$platform"/*; do
                 [ -d "$lang" ] || continue
-                echo "### 💻 $(basename "$lang")" >> README.md
-                echo "" >> README.md
+                content+="<b>💻 $(basename "$lang")</b><br>"
 
                 for level in "$lang"/*; do
                   [ -d "$level" ] || continue
-                  echo "#### 🏅 $(basename "$level")" >> README.md
-                  echo "" >> README.md
+                  content+="🏅 $(basename "$level")<br>"
 
                   for problem in "$level"/*; do
                     [ -d "$problem" ] || continue
                     title=$(basename "$problem")
 
-                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${problem}"
+                    encoded_path=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$problem")
+                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${encoded_path}"
 
-                    echo "- [$title]($repo_url)" >> README.md
+                    content+="&nbsp;&nbsp;- <a href=\"$repo_url\">$title</a><br>"
                   done
-                  echo "" >> README.md
                 done
+                content+="<br>"
               done
             fi
+
+            echo "$content"
           }
 
-          #################################
-          # Platforms
-          #################################
+          baekjoon=$(generate_content "Baekjoon")
+          programmers=$(generate_content "Programmers")
+          leetcode=$(generate_content "LeetCode")
 
-          generate_section "Baekjoon"
-          generate_section "Programmers"
-          generate_section "LeetCode"
+          echo "| 🟦 Baekjoon | 🟨 Programmers | 🟩 LeetCode |" >> README.md
+          echo "|-------------|----------------|-------------|" >> README.md
+          echo "| $baekjoon | $programmers | $leetcode |" >> README.md
 
       - name: Commit README
         run: |
