@@ -20,6 +20,9 @@ jobs:
           echo "# Algorithm Study" > README.md
           echo "" >> README.md
 
+          ########################################
+          # Baekjoon / Programmers (3단 구조)
+          ########################################
           generate_section () {
             platform=$1
 
@@ -40,35 +43,70 @@ jobs:
                   level_name=$(basename "$level")
 
                   echo "<details>" >> README.md
-                  echo "<summary>🏅 $level_name</summary>" >> README.md
+                  echo "<summary><b>🏅 $level_name</b></summary>" >> README.md
                   echo "" >> README.md
 
                   for problem in "$level"/*; do
                     [ -d "$problem" ] || continue
                     title=$(basename "$problem")
-                  
-                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${problem}"
-                    echo "- [$title]($repo_url)" >> README.md
-                  
-                  done
 
+                    clean_path=${problem#./}
+
+                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${clean_path}"
+
+                    echo "- [$title]($repo_url)" >> README.md
+                  done
 
                   echo "" >> README.md
                   echo "</details>" >> README.md
                   echo "" >> README.md
-
                 done
 
                 echo "</details>" >> README.md
                 echo "" >> README.md
+              done
+            fi
+          }
 
+          ########################################
+          # LeetCode (2단 구조)
+          ########################################
+          generate_leetcode () {
+            platform="LeetCode"
+
+            if [ -d "$platform" ]; then
+              echo "## 📂 LeetCode" >> README.md
+              echo "" >> README.md
+
+              for level in "$platform"/*; do
+                [ -d "$level" ] || continue
+                level_name=$(basename "$level")
+
+                echo "<details>" >> README.md
+                echo "<summary><b>🏅 $level_name</b></summary>" >> README.md
+                echo "" >> README.md
+
+                for problem in "$level"/*; do
+                  [ -d "$problem" ] || continue
+                  title=$(basename "$problem")
+
+                  clean_path=${problem#./}
+
+                  repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${clean_path}"
+
+                  echo "- [$title]($repo_url)" >> README.md
+                done
+
+                echo "" >> README.md
+                echo "</details>" >> README.md
+                echo "" >> README.md
               done
             fi
           }
 
           generate_section "Baekjoon"
           generate_section "Programmers"
-          generate_section "LeetCode"
+          generate_leetcode
 
       - name: Commit README
         run: |
