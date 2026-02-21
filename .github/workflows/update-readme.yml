@@ -20,102 +20,44 @@ jobs:
           echo "# Algorithm Study" > README.md
           echo "" >> README.md
 
-          #################################
-          # 🟦 Baekjoon
-          #################################
-          if [ -d "Baekjoon" ]; then
-            echo "## 🟦 Baekjoon" >> README.md
-            echo "" >> README.md
+          generate_section () {
+            platform=$1
 
-            for lang in Baekjoon/*; do
-              [ -d "$lang" ] || continue
-              echo "### 💻 $(basename "$lang")" >> README.md
+            if [ -d "$platform" ]; then
+              echo "## 📂 $platform" >> README.md
               echo "" >> README.md
 
-              for level in "$lang"/*; do
-                [ -d "$level" ] || continue
-                echo "#### 🏅 $(basename "$level")" >> README.md
+              for lang in "$platform"/*; do
+                [ -d "$lang" ] || continue
+                echo "### 💻 $(basename "$lang")" >> README.md
                 echo "" >> README.md
 
-                for problem in "$level"/*; do
-                  [ -d "$problem" ] || continue
-                  title=$(basename "$problem")
-                  id=$(echo "$title" | grep -o '^[0-9]\+')
-                  link="https://www.acmicpc.net/problem/$id"
-                  echo "- [$title]($link)" >> README.md
+                for level in "$lang"/*; do
+                  [ -d "$level" ] || continue
+                  echo "#### 🏅 $(basename "$level")" >> README.md
+                  echo "" >> README.md
+
+                  for problem in "$level"/*; do
+                    [ -d "$problem" ] || continue
+                    title=$(basename "$problem")
+
+                    repo_url="https://github.com/${GITHUB_REPOSITORY}/tree/${GITHUB_REF_NAME}/${problem}"
+
+                    echo "- [$title]($repo_url)" >> README.md
+                  done
+                  echo "" >> README.md
                 done
-                echo "" >> README.md
               done
-            done
-          fi
+            fi
+          }
 
           #################################
-          # 🟨 Programmers
+          # Platforms
           #################################
-          if [ -d "Programmers" ]; then
-            echo "## 🟨 Programmers" >> README.md
-            echo "" >> README.md
 
-            for lang in Programmers/*; do
-              [ -d "$lang" ] || continue
-              echo "### 💻 $(basename "$lang")" >> README.md
-              echo "" >> README.md
-
-              for level in "$lang"/*; do
-                [ -d "$level" ] || continue
-                echo "#### 🏅 $(basename "$level")" >> README.md
-                echo "" >> README.md
-
-                for problem in "$level"/*; do
-                  [ -d "$problem" ] || continue
-                  title=$(basename "$problem")
-
-                  readme_file="$problem/README.md"
-                  if [ -f "$readme_file" ]; then
-                    link=$(grep -o 'https://programmers.co.kr[^)]*' "$readme_file" | head -n 1)
-                    echo "- [$title]($link)" >> README.md
-                  else
-                    echo "- $title" >> README.md
-                  fi
-                done
-                echo "" >> README.md
-              done
-            done
-          fi
-
-          #################################
-          # 🟩 LeetCode
-          #################################
-          if [ -d "LeetCode" ]; then
-            echo "## 🟩 LeetCode" >> README.md
-            echo "" >> README.md
-
-            for lang in LeetCode/*; do
-              [ -d "$lang" ] || continue
-              echo "### 💻 $(basename "$lang")" >> README.md
-              echo "" >> README.md
-
-              for level in "$lang"/*; do
-                [ -d "$level" ] || continue
-                echo "#### 🏅 $(basename "$level")" >> README.md
-                echo "" >> README.md
-
-                for problem in "$level"/*; do
-                  [ -d "$problem" ] || continue
-                  title=$(basename "$problem")
-
-                  readme_file="$problem/README.md"
-                  if [ -f "$readme_file" ]; then
-                    link=$(grep -o 'https://leetcode.com[^)]*' "$readme_file" | head -n 1)
-                    echo "- [$title]($link)" >> README.md
-                  else
-                    echo "- $title" >> README.md
-                  fi
-                done
-                echo "" >> README.md
-              done
-            done
-          fi
+          generate_section "Baekjoon"
+          generate_section "Programmers"
+          generate_section "LeetCode"
 
       - name: Commit README
         run: |
