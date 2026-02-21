@@ -6,7 +6,7 @@
 <summary><b>💻 C++17</b></summary>
 
 <details>
-<summary><b>🏅 Bronze</b></summary>
+<summary><small>🏅 Bronze</small></summary>
 
 - [10718. We love kriii](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/C++17/Bronze/10718. We love kriii)
 - [11098. 첼시를 도와줘！](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/C++17/Bronze/11098. 첼시를 도와줘！)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>🏅 Silver</b></summary>
+<summary><small>🏅 Silver</small></summary>
 
 - [11279. 최대 힙](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/C++17/Silver/11279. 최대 힙)
 - [1927. 최소 힙](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/C++17/Silver/1927. 최소 힙)
@@ -34,7 +34,7 @@
 <summary><b>💻 Java</b></summary>
 
 <details>
-<summary><b>🏅 Bronze</b></summary>
+<summary><small>🏅 Bronze</small></summary>
 
 - [1000. A＋B](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Java/Bronze/1000. A＋B)
 - [1001. A－B](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Java/Bronze/1001. A－B)
@@ -91,7 +91,7 @@
 <summary><b>💻 Python</b></summary>
 
 <details>
-<summary><b>🏅 Bronze</b></summary>
+<summary><small>🏅 Bronze</small></summary>
 
 - [10039. 평균 점수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10039. 평균 점수)
 - [10699. 오늘 날짜](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10699. 오늘 날짜)
@@ -154,7 +154,7 @@
 </details>
 
 <details>
-<summary><b>🏅 Gold</b></summary>
+<summary><small>🏅 Gold</small></summary>
 
 - [1068. 트리](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/1068. 트리)
 - [14267. 회사 문화 1](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/14267. 회사 문화 1)
@@ -162,7 +162,7 @@
 </details>
 
 <details>
-<summary><b>🏅 Silver</b></summary>
+<summary><small>🏅 Silver</small></summary>
 
 - [10773. 제로](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/10773. 제로)
 - [10814. 나이순 정렬](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/10814. 나이순 정렬)
@@ -219,7 +219,7 @@
 <summary><b>💻 MySQL</b></summary>
 
 <details>
-<summary><b>🏅 1</b></summary>
+<summary><small>🏅 1</small></summary>
 
 - [59037. 어린 동물 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/MySQL/1/59037. 어린 동물 찾기)
 
@@ -231,7 +231,7 @@
 <summary><b>💻 Python3</b></summary>
 
 <details>
-<summary><b>🏅 0</b></summary>
+<summary><small>🏅 0</small></summary>
 
 - [181919. 콜라츠 수열 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/0/181919. 콜라츠 수열 만들기)
 - [181920. 카운트 업](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/0/181920. 카운트 업)
@@ -247,14 +247,14 @@
 </details>
 
 <details>
-<summary><b>🏅 1</b></summary>
+<summary><small>🏅 1</small></summary>
 
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
 
 </details>
 
 <details>
-<summary><b>🏅 2</b></summary>
+<summary><small>🏅 2</small></summary>
 
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
 
@@ -265,7 +265,7 @@
 ## 📂 LeetCode
 
 <details>
-<summary><b>🏅 Easy</b></summary>
+<summary><small>🏅 Easy</small></summary>
 
 - [0001-two-sum](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0001-two-sum)
 - [0009-palindrome-number](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0009-palindrome-number)
@@ -273,7 +273,7 @@
 </details>
 
 <details>
-<summary><b>🏅 Medium</b></summary>
+<summary><small>🏅 Medium</small></summary>
 
 - [0002-add-two-numbers](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0002-add-two-numbers)
 
