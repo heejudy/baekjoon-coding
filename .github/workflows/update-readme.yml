@@ -43,7 +43,7 @@ jobs:
                   level_name=$(basename "$level")
 
                   echo "<details>" >> README.md
-                  echo "<summary><b>🏅 $level_name</b></summary>" >> README.md
+                  echo "<summary><small>🏅 $level_name</small></summary>" >> README.md
                   echo "" >> README.md
 
                   for problem in "$level"/*; do
@@ -83,7 +83,7 @@ jobs:
                 level_name=$(basename "$level")
 
                 echo "<details>" >> README.md
-                echo "<summary><b>🏅 $level_name</b></summary>" >> README.md
+                echo "<summary><small>🏅 $level_name</small></summary>" >> README.md
                 echo "" >> README.md
 
                 for problem in "$level"/*; do
