@@ -257,6 +257,7 @@
 <summary><small>🏅 2</small></summary>
 
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
+- [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
 
 </details>
 
