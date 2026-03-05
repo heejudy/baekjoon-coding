@@ -126,6 +126,7 @@
 - [2577. 숫자의 개수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2577. 숫자의 개수)
 - [2581. 소수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2581. 소수)
 - [2609. 최대공약수와 최소공배수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2609. 최대공약수와 최소공배수)
+- [2720. 세탁소 사장 동혁](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2720. 세탁소 사장 동혁)
 - [27294. 몇개고？](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/27294. 몇개고？)
 - [2738. 행렬 덧셈](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2738. 행렬 덧셈)
 - [2744. 대소문자 바꾸기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2744. 대소문자 바꾸기)
@@ -199,6 +200,7 @@
 - [2512. 예산](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2512. 예산)
 - [25206. 너의 평점은](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/25206. 너의 평점은)
 - [2559. 수열](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2559. 수열)
+- [2563. 색종이](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2563. 색종이)
 - [2751. 수 정렬하기 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2751. 수 정렬하기 2)
 - [2805. 나무 자르기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2805. 나무 자르기)
 - [28278. 스택 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/28278. 스택 2)
@@ -258,8 +260,16 @@
 <details>
 <summary><small>🏅 2</small></summary>
 
+- [12905. 가장 큰 정사각형 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12905. 가장 큰 정사각형 찾기)
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
 - [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
+
+</details>
+
+<details>
+<summary><small>🏅 3</small></summary>
+
+- [12938. 최고의 집합](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/12938. 최고의 집합)
 
 </details>
 
