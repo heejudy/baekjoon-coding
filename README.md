@@ -257,6 +257,10 @@
 <summary><small>🏅 1</small></summary>
 
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
+- [250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석)
+- [250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸)
+- [250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기)
+- [340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기)
 
 </details>
 
@@ -265,6 +269,8 @@
 
 - [12905. 가장 큰 정사각형 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12905. 가장 큰 정사각형 찾기)
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
+- [140107. 점 찍기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/140107. 점 찍기)
+- [340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지)
 - [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
 
 </details>
