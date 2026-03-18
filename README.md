@@ -185,6 +185,7 @@
 - [1417. 국회의원 선거](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1417. 국회의원 선거)
 - [1436. 영화감독 숌](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1436. 영화감독 숌)
 - [14465. 소가 길을 건너간 이유 5](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/14465. 소가 길을 건너간 이유 5)
+- [14501. 퇴사](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/14501. 퇴사)
 - [1463. 1로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1463. 1로 만들기)
 - [1789. 수들의 합](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1789. 수들의 합)
 - [18258. 큐 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/18258. 큐 2)
