@@ -98,6 +98,7 @@
 - [10798. 세로읽기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10798. 세로읽기)
 - [10809. 알파벳 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10809. 알파벳 찾기)
 - [10817. 세 수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10817. 세 수)
+- [1085. 직사각형에서 탈출](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/1085. 직사각형에서 탈출)
 - [10872. 팩토리얼](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10872. 팩토리얼)
 - [10988. 팰린드롬인지 확인하기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10988. 팰린드롬인지 확인하기)
 - [10989. 수 정렬하기 3](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/10989. 수 정렬하기 3)
@@ -111,6 +112,7 @@
 - [1259. 팰린드롬수](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/1259. 팰린드롬수)
 - [13458. 시험 감독](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/13458. 시험 감독)
 - [15829. Hashing](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/15829. Hashing)
+- [15894. 수학은 체육과목 입니다](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/15894. 수학은 체육과목 입니다)
 - [15964. 이상한 기호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/15964. 이상한 기호)
 - [1978. 소수 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/1978. 소수 찾기)
 - [2163. 초콜릿 자르기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2163. 초콜릿 자르기)
@@ -152,6 +154,7 @@
 - [5597. 과제 안 내신 분．．？](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/5597. 과제 안 내신 분．．？)
 - [7287. 등록](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/7287. 등록)
 - [8958. OX퀴즈](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/8958. OX퀴즈)
+- [9063. 대지](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/9063. 대지)
 - [9506. 약수들의 합](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/9506. 약수들의 합)
 
 </details>
@@ -187,6 +190,7 @@
 - [14465. 소가 길을 건너간 이유 5](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/14465. 소가 길을 건너간 이유 5)
 - [14501. 퇴사](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/14501. 퇴사)
 - [1463. 1로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1463. 1로 만들기)
+- [1541. 잃어버린 괄호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1541. 잃어버린 괄호)
 - [1789. 수들의 합](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1789. 수들의 합)
 - [18258. 큐 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/18258. 큐 2)
 - [1874. 스택 수열](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1874. 스택 수열)
