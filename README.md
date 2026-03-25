@@ -196,6 +196,7 @@
 - [1874. 스택 수열](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1874. 스택 수열)
 - [18870. 좌표 압축](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/18870. 좌표 압축)
 - [1920. 수 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1920. 수 찾기)
+- [1929. 소수 구하기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1929. 소수 구하기)
 - [1932. 정수 삼각형](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1932. 정수 삼각형)
 - [1946. 신입 사원](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/1946. 신입 사원)
 - [2003. 수들의 합 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2003. 수들의 합 2)
@@ -296,6 +297,7 @@
 
 - [0001-two-sum](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0001-two-sum)
 - [0009-palindrome-number](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0009-palindrome-number)
+- [0349-intersection-of-two-arrays](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0349-intersection-of-two-arrays)
 
 </details>
 
