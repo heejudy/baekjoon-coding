@@ -277,6 +277,7 @@
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
 - [140107. 점 찍기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/140107. 점 찍기)
 - [340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지)
+- [42626. 더 맵게](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42626. 더 맵게)
 - [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
 
 </details>
