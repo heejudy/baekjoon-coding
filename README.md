@@ -204,6 +204,7 @@
 - [2164. 카드2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2164. 카드2)
 - [2331. 반복수열](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2331. 반복수열)
 - [2343. 기타 레슨](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2343. 기타 레슨)
+- [2346. 풍선 터뜨리기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2346. 풍선 터뜨리기)
 - [24444. 알고리즘 수업 － 너비 우선 탐색 1](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/24444. 알고리즘 수업 － 너비 우선 탐색 1)
 - [24479. 알고리즘 수업 － 깊이 우선 탐색 1](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/24479. 알고리즘 수업 － 깊이 우선 탐색 1)
 - [2512. 예산](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2512. 예산)
@@ -306,6 +307,7 @@
 <summary><small>🏅 Medium</small></summary>
 
 - [0002-add-two-numbers](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0002-add-two-numbers)
+- [0011-container-with-most-water](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0011-container-with-most-water)
 
 </details>
 
