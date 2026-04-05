@@ -211,6 +211,7 @@
 - [25206. 너의 평점은](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/25206. 너의 평점은)
 - [2559. 수열](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2559. 수열)
 - [2563. 색종이](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2563. 색종이)
+- [2579. 계단 오르기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2579. 계단 오르기)
 - [2751. 수 정렬하기 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2751. 수 정렬하기 2)
 - [2805. 나무 자르기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/2805. 나무 자르기)
 - [28278. 스택 2](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/28278. 스택 2)
@@ -308,6 +309,7 @@
 
 - [0002-add-two-numbers](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0002-add-two-numbers)
 - [0011-container-with-most-water](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0011-container-with-most-water)
+- [0347-top-k-frequent-elements](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0347-top-k-frequent-elements)
 
 </details>
 
