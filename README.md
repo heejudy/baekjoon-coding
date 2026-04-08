@@ -225,6 +225,7 @@
 - [7795. 먹을 것인가 먹힐 것인가](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/7795. 먹을 것인가 먹힐 것인가)
 - [9012. 괄호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9012. 괄호)
 - [9372. 상근이의 여행](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9372. 상근이의 여행)
+- [9465. 스티커](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9465. 스티커)
 
 </details>
 
