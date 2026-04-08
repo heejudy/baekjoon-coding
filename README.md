@@ -115,6 +115,7 @@
 - [15894. 수학은 체육과목 입니다](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/15894. 수학은 체육과목 입니다)
 - [15964. 이상한 기호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/15964. 이상한 기호)
 - [1978. 소수 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/1978. 소수 찾기)
+- [20944. 팰린드롬 척화비](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/20944. 팰린드롬 척화비)
 - [2163. 초콜릿 자르기](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2163. 초콜릿 자르기)
 - [2231. 분해합](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2231. 분해합)
 - [2292. 벌집](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Bronze/2292. 벌집)
@@ -223,6 +224,7 @@
 - [5567. 결혼식](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/5567. 결혼식)
 - [7795. 먹을 것인가 먹힐 것인가](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/7795. 먹을 것인가 먹힐 것인가)
 - [9012. 괄호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9012. 괄호)
+- [9372. 상근이의 여행](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9372. 상근이의 여행)
 
 </details>
 
