@@ -161,6 +161,14 @@
 </details>
 
 <details>
+<summary><small>🏅 Gold</small></summary>
+
+- [1068. 트리](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/1068. 트리)
+- [14267. 회사 문화 1](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/14267. 회사 문화 1)
+
+</details>
+
+<details>
 <summary><small>🏅 Silver</small></summary>
 
 - [10773. 제로](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/10773. 제로)
@@ -218,14 +226,6 @@
 - [9012. 괄호](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9012. 괄호)
 - [9372. 상근이의 여행](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9372. 상근이의 여행)
 - [9465. 스티커](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Silver/9465. 스티커)
-
-</details>
-
-<details>
-<summary><small>🏅 Gold</small></summary>
-
-- [1068. 트리](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/1068. 트리)
-- [14267. 회사 문화 1](https://github.com/heejudy/baekjoon-coding/tree/main/Baekjoon/Python/Gold/14267. 회사 문화 1)
 
 </details>
 
