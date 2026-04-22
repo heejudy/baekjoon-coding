@@ -267,6 +267,7 @@
 <details>
 <summary><small>🏅 1</small></summary>
 
+- [12906. 같은 숫자는 싫어](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12906. 같은 숫자는 싫어)
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
 - [250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석)
 - [250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸)
