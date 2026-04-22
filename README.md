@@ -315,27 +315,8 @@
 
 - [0002-add-two-numbers](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0002-add-two-numbers)
 - [0011-container-with-most-water](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0011-container-with-most-water)
+- [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view)
 - [0347-top-k-frequent-elements](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0347-top-k-frequent-elements)
 
 </details>
 
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view/) | Medium |
-## Depth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view/) | Medium |
-## Breadth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view/) | Medium |
-## Binary Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view/) | Medium |
-<!---LeetCode Topics End-->
