@@ -114,4 +114,7 @@ jobs:
           git config --local user.name "github-actions"
           git add README.md
           git diff --cached --quiet || git commit -m "auto update README"
-          git push
+      
+          git pull origin main --rebase
+      
+          git push origin main
