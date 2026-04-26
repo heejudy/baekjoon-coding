@@ -284,6 +284,7 @@
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
 - [140107. 점 찍기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/140107. 점 찍기)
 - [152996. 시소 짝꿍](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/152996. 시소 짝꿍)
+- [169199. 리코쳇 로봇](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/169199. 리코쳇 로봇)
 - [340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기)
 - [340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지)
 - [42626. 더 맵게](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42626. 더 맵게)
@@ -295,6 +296,7 @@
 <summary><small>🏅 3</small></summary>
 
 - [12938. 최고의 집합](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/12938. 최고의 집합)
+- [42861. 섬 연결하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/42861. 섬 연결하기)
 
 </details>
 
