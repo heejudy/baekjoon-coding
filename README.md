@@ -287,9 +287,12 @@
 - [169199. 리코쳇 로봇](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/169199. 리코쳇 로봇)
 - [340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기)
 - [340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340212. ［PCCP 기출문제］ 2번 ／ 퍼즐 게임 챌린지)
+- [42577. 전화번호 목록](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42577. 전화번호 목록)
+- [42578. 의상](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42578. 의상)
 - [42626. 더 맵게](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42626. 더 맵게)
 - [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
 - [42883. 큰 수 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42883. 큰 수 만들기)
+- [43165. 타겟 넘버](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/43165. 타겟 넘버)
 
 </details>
 
@@ -298,6 +301,8 @@
 
 - [12938. 최고의 집합](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/12938. 최고의 집합)
 - [42861. 섬 연결하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/42861. 섬 연결하기)
+- [43105. 정수 삼각형](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/43105. 정수 삼각형)
+- [43162. 네트워크](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/3/43162. 네트워크)
 
 </details>
 
