@@ -269,6 +269,7 @@
 
 - [12906. 같은 숫자는 싫어](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12906. 같은 숫자는 싫어)
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
+- [12932. 자연수 뒤집어 배열로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12932. 자연수 뒤집어 배열로 만들기)
 - [250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석)
 - [250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸)
 - [250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기)
