@@ -330,3 +330,19 @@
 
 </details>
 
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0202-happy-number](https://github.com/heejudy/baekjoon-coding/tree/main/0202-happy-number/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0202-happy-number](https://github.com/heejudy/baekjoon-coding/tree/main/0202-happy-number/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0202-happy-number](https://github.com/heejudy/baekjoon-coding/tree/main/0202-happy-number/) | Easy |
+<!---LeetCode Topics End-->
