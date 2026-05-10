@@ -268,6 +268,7 @@
 <summary><small>🏅 1</small></summary>
 
 - [12906. 같은 숫자는 싫어](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12906. 같은 숫자는 싫어)
+- [12918. 문자열 다루기 기본](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12918. 문자열 다루기 기본)
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
 - [12932. 자연수 뒤집어 배열로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12932. 자연수 뒤집어 배열로 만들기)
 - [12935. 제일 작은 수 제거하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12935. 제일 작은 수 제거하기)
@@ -276,6 +277,8 @@
 - [250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기)
 - [340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기)
 - [388351. 유연근무제](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/388351. 유연근무제)
+- [77884. 약수의 개수와 덧셈](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/77884. 약수의 개수와 덧셈)
+- [82612. 부족한 금액 계산하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/82612. 부족한 금액 계산하기)
 
 </details>
 
@@ -285,6 +288,7 @@
 - [12905. 가장 큰 정사각형 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12905. 가장 큰 정사각형 찾기)
 - [12939. 최댓값과 최솟값](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/12939. 최댓값과 최솟값)
 - [140107. 점 찍기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/140107. 점 찍기)
+- [148653. 마법의 엘리베이터](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/148653. 마법의 엘리베이터)
 - [152996. 시소 짝꿍](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/152996. 시소 짝꿍)
 - [169199. 리코쳇 로봇](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/169199. 리코쳇 로봇)
 - [340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/340211. ［PCCP 기출문제］ 3번 ／ 충돌위험 찾기)
