@@ -269,9 +269,11 @@
 
 - [12906. 같은 숫자는 싫어](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12906. 같은 숫자는 싫어)
 - [12918. 문자열 다루기 기본](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12918. 문자열 다루기 기본)
+- [12930. 이상한 문자 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12930. 이상한 문자 만들기)
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
 - [12932. 자연수 뒤집어 배열로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12932. 자연수 뒤집어 배열로 만들기)
 - [12935. 제일 작은 수 제거하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12935. 제일 작은 수 제거하기)
+- [131705. 삼총사](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/131705. 삼총사)
 - [250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석)
 - [250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸)
 - [250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기)
