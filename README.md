@@ -338,23 +338,3 @@
 
 </details>
 
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Two Pointers
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0844-backspace-string-compare](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0844-backspace-string-compare/) | Easy |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0844-backspace-string-compare](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0844-backspace-string-compare/) | Easy |
-## Stack
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0844-backspace-string-compare](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0844-backspace-string-compare/) | Easy |
-## Simulation
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0844-backspace-string-compare](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0844-backspace-string-compare/) | Easy |
-<!---LeetCode Topics End-->
