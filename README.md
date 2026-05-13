@@ -324,6 +324,7 @@
 - [0009-palindrome-number](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0009-palindrome-number)
 - [0202-happy-number](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0202-happy-number)
 - [0349-intersection-of-two-arrays](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0349-intersection-of-two-arrays)
+- [0844-backspace-string-compare](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Easy/0844-backspace-string-compare)
 
 </details>
 
