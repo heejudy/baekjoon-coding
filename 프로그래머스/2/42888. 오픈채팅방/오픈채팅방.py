@@ -4,10 +4,10 @@ def solution(record):
     
     for i in record:
         record_status = i.split()
-        # Enter 
         if record_status[0] == 'Enter':
             user_id, name = record_status[1], record_status[2]
             chat[user_id] = name
+        # 지우면 에러 남 
         elif record_status[0] == 'Leave':
             user_id = record_status[1]
         else:
