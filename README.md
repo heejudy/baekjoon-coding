@@ -269,16 +269,20 @@
 
 - [12906. 같은 숫자는 싫어](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12906. 같은 숫자는 싫어)
 - [12918. 문자열 다루기 기본](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12918. 문자열 다루기 기본)
+- [12926. 시저 암호](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12926. 시저 암호)
 - [12930. 이상한 문자 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12930. 이상한 문자 만들기)
 - [12931. 자릿수 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12931. 자릿수 더하기)
 - [12932. 자연수 뒤집어 배열로 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12932. 자연수 뒤집어 배열로 만들기)
 - [12935. 제일 작은 수 제거하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/12935. 제일 작은 수 제거하기)
 - [131705. 삼총사](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/131705. 삼총사)
+- [142086. 가장 가까운 같은 글자](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/142086. 가장 가까운 같은 글자)
 - [250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250121. ［PCCE 기출문제］ 10번 ／ 데이터 분석)
 - [250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250125. ［PCCE 기출문제］ 9번 ／ 이웃한 칸)
 - [250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기)
 - [340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/340213. ［PCCP 기출문제］ 1번 ／ 동영상 재생기)
 - [388351. 유연근무제](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/388351. 유연근무제)
+- [68644. 두 개 뽑아서 더하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/68644. 두 개 뽑아서 더하기)
+- [68935. 3진법 뒤집기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/68935. 3진법 뒤집기)
 - [77884. 약수의 개수와 덧셈](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/77884. 약수의 개수와 덧셈)
 - [82612. 부족한 금액 계산하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/1/82612. 부족한 금액 계산하기)
 
@@ -300,6 +304,7 @@
 - [42626. 더 맵게](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42626. 더 맵게)
 - [42842. 카펫](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42842. 카펫)
 - [42883. 큰 수 만들기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42883. 큰 수 만들기)
+- [42888. 오픈채팅방](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/42888. 오픈채팅방)
 - [43165. 타겟 넘버](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/43165. 타겟 넘버)
 - [70129. 이진 변환 반복하기](https://github.com/heejudy/baekjoon-coding/tree/main/Programmers/Python3/2/70129. 이진 변환 반복하기)
 
