@@ -341,6 +341,7 @@
 - [0002-add-two-numbers](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0002-add-two-numbers)
 - [0011-container-with-most-water](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0011-container-with-most-water)
 - [0199-binary-tree-right-side-view](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0199-binary-tree-right-side-view)
+- [0230-kth-smallest-element-in-a-bst](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0230-kth-smallest-element-in-a-bst)
 - [0347-top-k-frequent-elements](https://github.com/heejudy/baekjoon-coding/tree/main/LeetCode/Medium/0347-top-k-frequent-elements)
 
 </details>
